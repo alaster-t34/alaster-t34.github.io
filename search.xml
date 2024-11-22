@@ -4,25 +4,26 @@
   
     
     <entry>
-      <title>新文章的标题</title>
-      <link href="/2024/11/16/%E6%96%B0%E6%96%87%E7%AB%A0%E7%9A%84%E6%A0%87%E9%A2%98/"/>
-      <url>/2024/11/16/%E6%96%B0%E6%96%87%E7%AB%A0%E7%9A%84%E6%A0%87%E9%A2%98/</url>
+      <title></title>
+      <link href="/2024/11/21/%E4%BD%A0%E6%98%AF%E4%B8%80%E8%A2%8B%E7%8C%AB%E7%B2%AE/"/>
+      <url>/2024/11/21/%E4%BD%A0%E6%98%AF%E4%B8%80%E8%A2%8B%E7%8C%AB%E7%B2%AE/</url>
+      
+        <content type="html"><![CDATA[<hr><p>title: 你是一袋猫粮</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>OxMyxo test</title>
+      <link href="/2024/11/16/OxMyxo%20test/"/>
+      <url>/2024/11/16/OxMyxo%20test/</url>
       
         <content type="html"><![CDATA[<h1 id="一级标题题"><a href="#一级标题题" class="headerlink" title="一级标题题"></a>一级标题题</h1><h2 id="二标题"><a href="#二标题" class="headerlink" title="二标题"></a>二标题</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>When (a \ne 0), there are two solutions to (ax^2 + bx + c &#x3D; 0) and they are<br>$$x &#x3D; {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content>
       
       
-      
-        <tags>
-            
-            <tag> rrr </tag>
-            
-            <tag> ppap </tag>
-            
-            <tag> 哈哈 </tag>
-            
-            <tag> ababababab </tag>
-            
-        </tags>
       
     </entry>
     
