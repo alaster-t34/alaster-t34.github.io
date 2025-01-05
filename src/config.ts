@@ -7,7 +7,7 @@ import type {
 import { LinkPreset } from './types/config'
 
 export const siteConfig: SiteConfig = {
-  title: 'Alaster-t34',
+  title: 'Alastor-t34',
   subtitle: 'Demo Site',
   lang: 'zh_CN',         // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko'
   themeColor: {
@@ -16,7 +16,7 @@ export const siteConfig: SiteConfig = {
   },
   banner: {
     enable: true,
-    src: 'assets/images/banner.png',   // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+    src: 'assets/images/bannerd.jpg',   // Relative to the /src directory. Relative to the /public directory if it starts with '/'
     position: 'center',      // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
     credit: {
       enable: false,         // Display the credit text of the banner image
@@ -55,13 +55,13 @@ export const profileConfig: ProfileConfig = {
   name: 'Alaster-t34',
   bio: '再见了，所有的无名之神',
   links: [
-    // {
-    //   name: 'Twitter',
-    //   icon: 'fa6-brands:twitter',       // Visit https://icones.js.org/ for icon codes
-    //                                     // You will need to install the corresponding icon set if it's not already included
-    //                                     // `pnpm add @iconify-json/<icon-set-name>`
-    //   url: 'https://twitter.com',
-    // },
+    {
+      name: 'Twitter',
+      icon: 'fa6-brands:twitter',       // Visit https://icones.js.org/ for icon codes
+      // You will need to install the corresponding icon set if it's not already included
+      // `pnpm add @iconify-json/<icon-set-name>`
+      url: 'https://x.com/AlastorWedel/lists',
+    },
     {
       name: 'Steam',
       icon: 'fa6-brands:steam',
