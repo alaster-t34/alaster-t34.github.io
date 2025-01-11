@@ -36,6 +36,7 @@
     "hastscript": "^9.0.0",
     "markdown-it": "^14.1.0",
     "mdast-util-to-string": "^4.0.0",
+    "oh-my-live2d": "^0.19.3",
     "overlayscrollbars": "^2.10.0",
     "pagefind": "^1.1.1",
     "photoswipe": "^5.4.4",
