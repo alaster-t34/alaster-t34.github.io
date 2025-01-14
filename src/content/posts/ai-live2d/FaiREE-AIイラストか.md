@@ -4,7 +4,7 @@ published: 2025-01-13
 description: ''
 image: './社交的手段.jpg'
 tags: [AI, Live2D]
-category: ''
+category: 'live2d'
 draft: false 
 lang: ''
 ---
