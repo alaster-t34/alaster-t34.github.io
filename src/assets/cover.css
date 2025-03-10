@@ -1,0 +1,22 @@
+/* src/assets/styles.css */
+.hidden-text {
+  display: inline-block;
+  position: relative;
+  cursor: pointer; /* 當鼠標懸停時，顯示手形圖標 */
+}
+
+.hidden {
+  display: block;
+  background-color: black; /* 黑色遮擋 */
+  color: black; /* 文字隱藏，和背景一樣 */
+  padding: 0 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: color 0.3s, background-color 0.3s; /* 添加過渡效果 */
+}
+
+.hidden-text:hover .hidden {
+  color: white; /* 鼠標懸停時顯示文字 */
+  background-color: transparent; /* 背景變為透明 */
+}
