@@ -6,7 +6,6 @@ description: '由凱伊記錄：協助使用者查詢 Linux 命令幫助資訊'
 image: ''
 tags: [Linux, linux命令, CLI, Help]
 category: 'Linux'
-draft: false
 lang: 'zh-TW'
 -------------
 
