@@ -1,10 +1,15 @@
-import { defineConfig } from 'astro/config'
-import icon from 'astro-icon'
 import svelte from '@astrojs/svelte'
+import tailwind from '@astrojs/tailwind'
+import icon from 'astro-icon'
+import { defineConfig } from 'astro/config'
 
 export default defineConfig({
   site: 'https://alaster-t34.github.io',
   integrations: [
+    tailwind({
+      applyBaseStyles: false,
+      nesting: true,
+    }),
     icon(),
     svelte(),
   ],
