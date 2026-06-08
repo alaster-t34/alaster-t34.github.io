@@ -5,6 +5,9 @@ import { defineConfig } from 'astro/config'
 
 export default defineConfig({
   site: 'https://alaster-t34.github.io',
+  build: {
+    assets: 'assets',
+  },
   integrations: [
     tailwind({
       applyBaseStyles: false,
