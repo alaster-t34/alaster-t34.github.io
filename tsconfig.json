@@ -4,6 +4,7 @@
     "strictNullChecks": true,
     "allowJs": false,
     "declaration": true,
+    "jsx": "react-jsx",
     "plugins": [
       {
         "name": "@astrojs/ts-plugin"
