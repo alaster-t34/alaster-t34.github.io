@@ -3,13 +3,6 @@
     "baseUrl": ".",
     "strictNullChecks": true,
     "allowJs": false,
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "allowImportingTsExtensions": true,
-    "skipLibCheck": true,
     "declaration": true,
     "jsx": "react-jsx",
     "plugins": [
