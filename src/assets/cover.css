@@ -5,7 +5,8 @@
   cursor: pointer; /* 當鼠標懸停時，顯示手形圖標 */
 }
 
-.hidden {
+/* Scope the cover effect so it does not override Tailwind's global .hidden utility. */
+.hidden-text .hidden {
   display: block;
   background-color: black; /* 黑色遮擋 */
   color: black; /* 文字隱藏，和背景一樣 */
