@@ -1,16 +1,3 @@
----
-title: linux命令帮助信息
-published: 2024-12-30
-description: '查看Linux命令幫助信息'
-image: ''
-tags: [Linux,linux命令]
-category: 'Linux'
-draft: false 
-lang: ''
----
-
----
-
 title: Linux 命令幫助資訊
 published: 2024-12-30
 description: '查看 Linux 命令幫助資訊：help、--help、man、info、whatis、apropos 等工具整理'
