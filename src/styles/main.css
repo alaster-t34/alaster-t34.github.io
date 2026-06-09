@@ -225,7 +225,7 @@
     #navbar .card-base {
         position: relative;
         border-radius: 0 0 1.35rem 1.35rem;
-        background: linear-gradient(135deg, rgba(255,255,255,0.96), rgba(232,248,255,0.9));
+        background: linear-gradient(135deg, rgba(255,255,255,0.99), rgba(232,248,255,0.97));
         border-top: 0;
     }
 
@@ -241,7 +241,7 @@
     }
 
     :root.dark #navbar .card-base {
-        background: linear-gradient(135deg, rgba(20,32,48,0.96), rgba(14,45,68,0.9));
+        background: linear-gradient(135deg, rgba(20,32,48,0.99), rgba(14,45,68,0.97));
     }
 
     .btn-plain,
