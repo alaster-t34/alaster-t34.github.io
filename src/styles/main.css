@@ -160,53 +160,13 @@
 @layer base {
     html {
         min-height: 100%;
-        background:
-            radial-gradient(circle at 18% 12%, rgba(80, 204, 255, 0.24), transparent 26rem),
-            radial-gradient(circle at 88% 8%, rgba(39, 130, 255, 0.18), transparent 24rem),
-            linear-gradient(135deg, #f7fcff 0%, #eef8ff 46%, #ffffff 100%);
-    }
-
-    html.dark {
-        background:
-            radial-gradient(circle at 18% 12%, rgba(40, 170, 255, 0.16), transparent 26rem),
-            radial-gradient(circle at 88% 8%, rgba(98, 118, 255, 0.14), transparent 24rem),
-            linear-gradient(135deg, #091520 0%, #101b2c 50%, #08111d 100%);
+        background: url("../assets/images/page-background.webp") center / cover fixed no-repeat;
     }
 
     body {
         position: relative;
         overflow-x: hidden;
-        background:
-            linear-gradient(120deg, rgba(45, 178, 255, 0.11) 0 1px, transparent 1px 72px),
-            linear-gradient(30deg, rgba(59, 130, 246, 0.08) 0 1px, transparent 1px 88px),
-            transparent;
-    }
-
-    body::before,
-    body::after {
-        content: "";
-        position: fixed;
-        pointer-events: none;
-        z-index: 0;
-    }
-
-    body::before {
-        inset: 0;
-        background:
-            linear-gradient(90deg, rgba(20, 157, 255, 0.07) 1px, transparent 1px),
-            linear-gradient(0deg, rgba(20, 157, 255, 0.05) 1px, transparent 1px);
-        background-size: 44px 44px;
-        mask-image: linear-gradient(to bottom, black, transparent 70%);
-    }
-
-    body::after {
-        width: 30rem;
-        height: 30rem;
-        right: -9rem;
-        top: 7rem;
-        border: 1.5rem solid rgba(52, 181, 255, 0.12);
-        border-radius: 999px;
-        box-shadow: -18rem 34rem 0 -11rem rgba(52, 181, 255, 0.12);
+        background: transparent;
     }
 }
 
