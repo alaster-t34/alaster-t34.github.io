@@ -9,7 +9,11 @@ import { siteConfig } from '../config'
 import type { MarkdownHeading } from 'astro'
 import TOC from "../components/widget/TOC.astro";
 import ImageWrapper from "../components/misc/ImageWrapper.astro";
-import {BANNER_HEIGHT, BANNER_HEIGHT_EXTEND, MAIN_PANEL_OVERLAPS_BANNER_HEIGHT} from "../constants/constants";
+import { MAIN_PANEL_OVERLAPS_BANNER_HEIGHT } from "../constants/constants";
+import {
+  BANNER_VISUAL_HEIGHT,
+  BANNER_VISUAL_HEIGHT_EXTEND,
+} from "../constants/banner";
 
 interface Props {
   title?: string
@@ -25,7 +29,7 @@ const hasBannerCredit =
   siteConfig.banner.enable && siteConfig.banner.credit.enable
 const hasBannerLink = !!siteConfig.banner.credit.url
 
-const mainPanelTop = siteConfig.banner.enable ? `calc(${BANNER_HEIGHT}vh - ${MAIN_PANEL_OVERLAPS_BANNER_HEIGHT}rem)` : "5.5rem"
+const mainPanelTop = siteConfig.banner.enable ? `calc(${BANNER_VISUAL_HEIGHT}vh - ${MAIN_PANEL_OVERLAPS_BANNER_HEIGHT}rem)` : "5.5rem"
 ---
 
 <Layout title={title} banner={banner} description={description} lang={lang} setOGTypeArticle={setOGTypeArticle}>
@@ -39,7 +43,7 @@ const mainPanelTop = siteConfig.banner.enable ? `calc(${BANNER_HEIGHT}vh - ${MAI
 </div>
 
 <!-- Banner -->
-{siteConfig.banner.enable && <div id="banner-wrapper" class=`absolute z-10 w-full transition duration-700 overflow-hidden` style=`top: -${BANNER_HEIGHT_EXTEND}vh`>
+{siteConfig.banner.enable && <div id="banner-wrapper" class=`absolute z-10 w-full transition duration-700 overflow-hidden` style=`top: -${BANNER_VISUAL_HEIGHT_EXTEND}vh`>
     <ImageWrapper id="banner" alt="Banner image of the blog" class:list={["object-cover h-full transition duration-700 opacity-0 scale-105"]}
                   src={siteConfig.banner.src} position={siteConfig.banner.position}
     >
