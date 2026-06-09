@@ -1,63 +1,70 @@
-# 🍥Fuwari
+# Alastor-t34 Anime Tech Blog
 
-A static blog template built with [Astro](https://astro.build).
+An Astro-powered personal blog customized from Fuwari into a cleaner anime-game style interface.
 
-[**🖥️ Live Demo (Vercel)**](https://fuwari.vercel.app)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
-[**📦 Old Hexo Version**](https://github.com/saicaca/hexo-theme-vivia)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
-[**🌏 中文**](https://github.com/saicaca/fuwari/blob/main/README.zh-CN.md)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
-[**🌏 日本語**](https://github.com/saicaca/fuwari/blob/main/README.ja-JP.md)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
-[**🌏 한국어**](https://github.com/saicaca/fuwari/blob/main/README.ko.md)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
-[**🌏 Español**](https://github.com/saicaca/fuwari/blob/main/README.es.md)
+The site focuses on AI, Live2D, desktop-pet experiments, frontend notes, Linux notes, and personal technical writing.
 
-> README version: `2024-09-10`
+## Features
 
-![Preview Image](https://raw.githubusercontent.com/saicaca/resource/main/fuwari/home.png)
+- Anime-game inspired glass UI with cyan/pink HUD accents
+- Large responsive banner artwork with tuned visual-only banner sizing
+- Astro static generation with Tailwind CSS styling
+- Light / dark mode and theme color controls
+- Post archive, category, tag, RSS, and Pagefind search support
+- Markdown posts with cover images, reading metadata, and responsive layouts
 
-## ✨ Features
+## Project Structure
 
-- [x] Built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com)
-- [x] Smooth animations and page transitions
-- [x] Light / dark mode
-- [x] Customizable theme colors & banner
-- [x] Responsive design
-- [ ] Comments
-- [x] Search
-- [ ] TOC
+```text
+src/config.ts                 Site title, navigation, banner, profile, favicon
+src/constants/banner.ts       Visual banner height overrides for this customized theme
+src/styles/anime-game.css     Anime-game UI overrides loaded after the base theme
+src/content/posts/            Blog posts and post-local assets
+src/content/spec/about.md     About page content
+public/favicon/               Favicons served from the public directory
+```
 
-## 🚀 How to Use
+## Getting Started
 
-1. [Generate a new repository](https://github.com/saicaca/fuwari/generate) from this template or fork this repository.
-2. To edit your blog locally, clone your repository, run `pnpm install` AND `pnpm add sharp` to install dependencies.
-   - Install [pnpm](https://pnpm.io) `npm install -g pnpm` if you haven't.
-3. Edit the config file `src/config.ts` to customize your blog.
-4. Run `pnpm new-post <filename>` to create a new post and edit it in `src/content/posts/`.
-5. Deploy your blog to Vercel, Netlify, GitHub Pages, etc. following [the guides](https://docs.astro.build/en/guides/deploy/). You need to edit the site configuration in `astro.config.mjs` before deployment.
+```bash
+pnpm install
+pnpm dev
+```
 
-## ⚙️ Frontmatter of Posts
+Build the production site:
+
+```bash
+pnpm build
+```
+
+Create a new post:
+
+```bash
+pnpm new-post <filename>
+```
+
+## Post Frontmatter
 
 ```yaml
 ---
 title: My First Blog Post
-published: 2023-09-09
-description: This is the first post of my new Astro blog.
+published: 2026-01-01
+description: Short description for cards and metadata.
 image: ./cover.jpg
-tags: [Foo, Bar]
-category: Front-end
+tags: [AI, Live2D]
+category: Research
 draft: false
-lang: jp      # Set only if the post's language differs from the site's language in `config.ts`
+lang: zh_CN
 ---
 ```
 
-## 🧞 Commands
+## Customization Notes
 
-All commands are run from the root of the project, from a terminal:
+- Change global site information in `src/config.ts`.
+- Adjust banner height in `src/constants/banner.ts` without touching upstream theme defaults.
+- Tune the anime-game visual layer in `src/styles/anime-game.css`.
+- Place post images beside each post and reference them with relative paths.
 
-| Command                             | Action                                           |
-|:------------------------------------|:-------------------------------------------------|
-| `pnpm install` AND `pnpm add sharp` | Installs dependencies                            |
-| `pnpm dev`                          | Starts local dev server at `localhost:4321`      |
-| `pnpm build`                        | Build your production site to `./dist/`          |
-| `pnpm preview`                      | Preview your build locally, before deploying     |
-| `pnpm new-post <filename>`          | Create a new post                                |
-| `pnpm astro ...`                    | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro --help`                 | Get help using the Astro CLI                     |
+## Credits
+
+This site is based on the Astro blog theme Fuwari and customized for Alastor-t34's anime/AI style.

@@ -1,59 +1,70 @@
-# 🍥Fuwari
+# Alastor-t34 动漫科技博客
 
-基于 [Astro](https://astro.build) 开发的静态博客模板。
+这是一个基于 Astro 的个人博客，由 Fuwari 主题定制为更偏“二次元游戏界面”的视觉风格。
 
-[**🖥️在线预览（Vercel）**](https://fuwari.vercel.app)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
-[**📦旧 Hexo 版本**](https://github.com/saicaca/hexo-theme-vivia)
+站点内容主要用于记录 AI、Live2D、AI 桌宠、前端、Linux 以及个人技术实验。
 
-> README 版本：`2024-09-10`
+## 功能特性
 
-![Preview Image](https://raw.githubusercontent.com/saicaca/resource/main/fuwari/home.png)
+- 粉蓝霓虹 + 玻璃拟态 + HUD 装饰的二次元游戏界面风格
+- 响应式大横幅背景图，并通过独立常量控制视觉高度
+- 基于 Astro 静态生成，使用 Tailwind CSS 组织样式
+- 支持亮色 / 暗色模式和主题色切换
+- 支持文章归档、分类、标签、RSS 和 Pagefind 搜索
+- Markdown 写作，支持封面图、阅读时间、文章元信息和响应式布局
 
-## ✨ 功能特性
+## 项目结构
 
-- [x] 基于 Astro 和 Tailwind CSS 开发
-- [x] 流畅的动画和页面过渡
-- [x] 亮色 / 暗色模式
-- [x] 自定义主题色和横幅图片
-- [x] 响应式设计
-- [ ] 评论
-- [x] 搜索
-- [ ] 文内目录
+```text
+src/config.ts                 站点标题、导航、横幅、个人信息、图标等配置
+src/constants/banner.ts       当前主题专用的横幅视觉高度配置
+src/styles/anime-game.css     二次元游戏界面视觉覆盖样式
+src/content/posts/            博客文章和文章局部资源
+src/content/spec/about.md     关于页面内容
+public/favicon/               站点图标
+```
 
-## 🚀 使用方法
+## 本地开发
 
-1. 使用此模板[生成新仓库](https://github.com/saicaca/fuwari/generate)或 Fork 此仓库
-2. 进行本地开发，Clone 新的仓库，执行 `pnpm install` 和 `pnpm add sharp` 以安装依赖  
-   - 若未安装 [pnpm](https://pnpm.io)，执行 `npm install -g pnpm`
-3. 通过配置文件 `src/config.ts` 自定义博客
-4. 执行 `pnpm new-post <filename>` 创建新文章，并在 `src/content/posts/` 目录中编辑
-5. 参考[官方指南](https://docs.astro.build/zh-cn/guides/deploy/)将博客部署至 Vercel, Netlify, GitHub Pages 等；部署前需编辑 `astro.config.mjs` 中的站点设置。
+```bash
+pnpm install
+pnpm dev
+```
 
-## ⚙️ 文章 Frontmatter
+构建生产版本：
+
+```bash
+pnpm build
+```
+
+创建新文章：
+
+```bash
+pnpm new-post <filename>
+```
+
+## 文章 Frontmatter
 
 ```yaml
 ---
-title: My First Blog Post
-published: 2023-09-09
-description: This is the first post of my new Astro blog.
+title: 我的第一篇文章
+published: 2026-01-01
+description: 用于文章卡片和元信息的简短描述。
 image: ./cover.jpg
-tags: [Foo, Bar]
-category: Front-end
+tags: [AI, Live2D]
+category: Research
 draft: false
-lang: jp      # 仅当文章语言与 `config.ts` 中的网站语言不同时需要设置
+lang: zh_CN
 ---
 ```
 
-## 🧞 指令
+## 自定义说明
 
-下列指令均需要在项目根目录执行：
+- 站点基础信息在 `src/config.ts` 中修改。
+- 横幅高度在 `src/constants/banner.ts` 中调整，避免直接改动上游主题默认常量。
+- 二次元游戏界面的视觉效果集中在 `src/styles/anime-game.css` 中调整。
+- 文章图片建议放在文章同级目录，并使用相对路径引用。
 
-| Command                           | Action                            |
-|:----------------------------------|:----------------------------------|
-| `pnpm install` 并 `pnpm add sharp` | 安装依赖                              |
-| `pnpm dev`                        | 在 `localhost:4321` 启动本地开发服务器      |
-| `pnpm build`                      | 构建网站至 `./dist/`                   |
-| `pnpm preview`                    | 本地预览已构建的网站                        |
-| `pnpm new-post <filename>`        | 创建新文章                             |
-| `pnpm astro ...`                  | 执行 `astro add`, `astro check` 等指令 |
-| `pnpm astro --help`               | 显示 Astro CLI 帮助                   |
+## Credits
+
+本站基于 Astro 博客主题 Fuwari 定制，并针对 Alastor-t34 的动漫 / AI 内容方向进行了视觉改造。
