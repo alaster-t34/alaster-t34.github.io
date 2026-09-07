@@ -13,14 +13,17 @@ function initLive2D() {
   try {
     createWidget({
       model: {
-        path: 'https://model.hacxy.cn/cat-black/model.json',
+        path: 'https://raw.githubusercontent.com/zenghongtu/live2d-model-assets/master/assets/moc/girls-frontline/HK416-1/normal/model.json',
         scale: 1,
         volume: 0,
         logLevel: 'warn',
         tips: false,
       },
       position: 'bottom-right',
-      size: 320,
+      size: {
+        width: 360,
+        height: 480,
+      },
       primaryColor: 'rgba(56, 176, 222, 0.92)',
       transitionDuration: 900,
       transitionType: 'slide',
