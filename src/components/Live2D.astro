@@ -1,0 +1,45 @@
+<script>
+import { loadOml2d } from 'oh-my-live2d'
+
+declare global {
+  interface Window {
+    __alasterOml2dLoaded?: boolean
+  }
+}
+
+function initLive2D() {
+  if (window.__alasterOml2dLoaded) return
+
+  window.__alasterOml2dLoaded = true
+
+  try {
+    loadOml2d({
+      dockedPosition: 'right',
+      initialStatus: 'active',
+      mobileDisplay: false,
+      primaryColor: '#38B0DE',
+      sayHello: false,
+      models: [
+        {
+          name: 'HK416',
+          path: 'https://model.oml2d.com/HK416-1-normal/model.json',
+          position: [0, 60],
+          scale: 0.08,
+          stageStyle: {
+            height: 450,
+          },
+        },
+      ],
+    })
+  } catch (error) {
+    window.__alasterOml2dLoaded = false
+    console.error('[Live2D] Failed to initialize OhMyLive2D:', error)
+  }
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initLive2D, { once: true })
+} else {
+  initLive2D()
+}
+</script>
