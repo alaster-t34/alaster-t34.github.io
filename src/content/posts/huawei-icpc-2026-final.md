@@ -1,5 +1,5 @@
 ---
-title: 從 16383 到全球第 15：ICPC 2026 Huawei Online Challenge 邊雲協同排程復盤
+title: ICPC 2026 Huawei Online Challenge：邊雲協同排程競賽復盤
 published: 2026-09-07
 description: 'ICPC 2026 Online Challenge 1 powered by Huawei：Edge-Cloud Collaborative Scheduling 的最終排名、真正最終提交源碼、迭代路線、評分模型與實作思考。'
 image: '/assets/images/huawei-icpc-2026-final-standings.webp'
