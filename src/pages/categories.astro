@@ -1,0 +1,13 @@
+---
+import MainGridLayout from '../layouts/MainGridLayout.astro'
+import { getCategoryList } from '../utils/content-utils'
+const categories = await getCategoryList()
+---
+<MainGridLayout title="Categories" description="Categories">
+<div class="card-base p-8">
+<h1>Categories</h1>
+<ul>
+{categories.map(c => <li>{c.name} ({c.count})</li>)}
+</ul>
+</div>
+</MainGridLayout>
