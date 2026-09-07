@@ -1,39 +1,35 @@
 <script>
-import { loadOml2d } from 'oh-my-live2d'
+import { createWidget } from 'l2d-widget'
 
 declare global {
   interface Window {
-    __alasterOml2dLoaded?: boolean
+    __alasterL2dLoaded?: boolean
   }
 }
 
 function initLive2D() {
-  if (window.__alasterOml2dLoaded) return
-
-  window.__alasterOml2dLoaded = true
+  if (window.__alasterL2dLoaded) return
 
   try {
-    loadOml2d({
-      dockedPosition: 'right',
-      initialStatus: 'active',
-      mobileDisplay: false,
-      primaryColor: '#38B0DE',
-      sayHello: false,
-      models: [
-        {
-          name: 'HK416',
-          path: 'https://model.oml2d.com/HK416-1-normal/model.json',
-          position: [0, 60],
-          scale: 0.08,
-          stageStyle: {
-            height: 450,
-          },
-        },
-      ],
+    createWidget({
+      model: {
+        path: 'https://model.hacxy.cn/cat-black/model.json',
+        scale: 1,
+        volume: 0,
+        logLevel: 'warn',
+        tips: false,
+      },
+      position: 'bottom-right',
+      size: 320,
+      primaryColor: 'rgba(56, 176, 222, 0.92)',
+      transitionDuration: 900,
+      transitionType: 'slide',
     })
+
+    window.__alasterL2dLoaded = true
   } catch (error) {
-    window.__alasterOml2dLoaded = false
-    console.error('[Live2D] Failed to initialize OhMyLive2D:', error)
+    window.__alasterL2dLoaded = false
+    console.error('[Live2D] Failed to initialize l2d-widget:', error)
   }
 }
 
