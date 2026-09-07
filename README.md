@@ -1,63 +1,102 @@
-# 🍥Fuwari
+# Alastor-t34 Blog
 
-A static blog template built with [Astro](https://astro.build).
+个人博客与技术笔记站点，基于 [Astro](https://astro.build/) 与 [Fuwari](https://github.com/saicaca/fuwari) 构建。
 
-[**🖥️ Live Demo (Vercel)**](https://fuwari.vercel.app)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
-[**📦 Old Hexo Version**](https://github.com/saicaca/hexo-theme-vivia)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
-[**🌏 中文**](https://github.com/saicaca/fuwari/blob/main/README.zh-CN.md)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
-[**🌏 日本語**](https://github.com/saicaca/fuwari/blob/main/README.ja-JP.md)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
-[**🌏 한국어**](https://github.com/saicaca/fuwari/blob/main/README.ko.md)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
-[**🌏 Español**](https://github.com/saicaca/fuwari/blob/main/README.es.md)
+> 再见了，所有的无名之神。
 
-> README version: `2024-09-10`
+## 🌐 在线访问
 
-![Preview Image](https://raw.githubusercontent.com/saicaca/resource/main/fuwari/home.png)
+- Blog: https://alaster-t34.github.io/
+- GitHub: https://github.com/alaster-t34
 
-## ✨ Features
+## ✨ 站点内容
 
-- [x] Built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com)
-- [x] Smooth animations and page transitions
-- [x] Light / dark mode
-- [x] Customizable theme colors & banner
-- [x] Responsive design
-- [ ] Comments
-- [x] Search
-- [ ] TOC
+这里主要记录学习、开发与折腾过程中的内容，包括但不限于：
 
-## 🚀 How to Use
+- Artificial Intelligence / Machine Learning
+- Linux / Arch Linux
+- Software Engineering
+- Mathematics & Algorithms
+- Research Notes
+- Projects & Experiments
 
-1. [Generate a new repository](https://github.com/saicaca/fuwari/generate) from this template or fork this repository.
-2. To edit your blog locally, clone your repository, run `pnpm install` AND `pnpm add sharp` to install dependencies.
-   - Install [pnpm](https://pnpm.io) `npm install -g pnpm` if you haven't.
-3. Edit the config file `src/config.ts` to customize your blog.
-4. Run `pnpm new-post <filename>` to create a new post and edit it in `src/content/posts/`.
-5. Deploy your blog to Vercel, Netlify, GitHub Pages, etc. following [the guides](https://docs.astro.build/en/guides/deploy/). You need to edit the site configuration in `astro.config.mjs` before deployment.
+## 🧰 技术栈
 
-## ⚙️ Frontmatter of Posts
+- [Astro](https://astro.build/)
+- [Svelte](https://svelte.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Pagefind](https://pagefind.app/) 全文搜索
+- [KaTeX](https://katex.org/) 数学公式渲染
+- [PhotoSwipe](https://photoswipe.com/) 图片浏览
+- Live2D
 
-```yaml
----
-title: My First Blog Post
-published: 2023-09-09
-description: This is the first post of my new Astro blog.
-image: ./cover.jpg
-tags: [Foo, Bar]
-category: Front-end
-draft: false
-lang: jp      # Set only if the post's language differs from the site's language in `config.ts`
----
+## 🚀 本地运行
+
+需要 Node.js 与 pnpm。
+
+```bash
+git clone https://github.com/alaster-t34/alaster-t34.github.io.git
+cd alaster-t34.github.io
+pnpm install
+pnpm dev
 ```
 
-## 🧞 Commands
+默认开发服务器运行在：
 
-All commands are run from the root of the project, from a terminal:
+```text
+http://localhost:4321
+```
 
-| Command                             | Action                                           |
-|:------------------------------------|:-------------------------------------------------|
-| `pnpm install` AND `pnpm add sharp` | Installs dependencies                            |
-| `pnpm dev`                          | Starts local dev server at `localhost:4321`      |
-| `pnpm build`                        | Build your production site to `./dist/`          |
-| `pnpm preview`                      | Preview your build locally, before deploying     |
-| `pnpm new-post <filename>`          | Create a new post                                |
-| `pnpm astro ...`                    | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro --help`                 | Get help using the Astro CLI                     |
+生产构建：
+
+```bash
+pnpm build
+```
+
+本地预览构建结果：
+
+```bash
+pnpm preview
+```
+
+## ✍️ 新建文章
+
+```bash
+pnpm new-post <filename>
+```
+
+文章位于：
+
+```text
+src/content/posts/
+```
+
+站点主要配置位于：
+
+```text
+src/config.ts
+```
+
+## 📁 常用目录
+
+```text
+src/
+├── components/        # 页面组件
+├── content/posts/     # 博客文章
+├── layouts/           # 页面布局
+├── pages/             # Astro 页面
+└── config.ts          # 站点配置
+
+public/                # 静态资源
+scripts/               # 辅助脚本
+```
+
+## 🙏 Credits
+
+本站基于 [saicaca/fuwari](https://github.com/saicaca/fuwari) 修改与扩展，感谢原作者及相关开源项目。
+
+## 📄 License
+
+项目代码遵循仓库中的 MIT License。
+
+博客文章内容除特别说明外，采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可。
